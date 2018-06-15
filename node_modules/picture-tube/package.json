@@ -1,0 +1,46 @@
+{
+    "name" : "picture-tube",
+    "description" : "render 256 color images on the terminal",
+    "version" : "0.0.4",
+    "repository" : {
+        "type" : "git",
+        "url" : "git://github.com/substack/picture-tube.git"
+    },
+    "main" : "index.js",
+    "bin" : {
+        "picture-tube" : "bin/tube.js"
+    },
+    "keywords" : [
+        "png",
+        "viewer",
+        "terminal",
+        "ansi"
+    ],
+    "directories" : {
+        "test" : "test"
+    },
+    "scripts" : {
+        "test" : "tap test/*.js"
+    },
+    "dependencies" : {
+        "event-stream" : "~0.9.8",
+        "buffers" : "~0.1.1",
+        "charm" : "~0.1.0",
+        "png-js" : "~0.1.0",
+        "x256" : "~0.0.1",
+        "request" : "~2.9.202",
+        "optimist" : "~0.3.4"
+    },
+    "devDependencies" : {
+        "tap" : "~0.2.4"
+    },
+    "engines" : {
+        "node" : ">=0.4.0"
+    },
+    "license" : "MIT",
+    "author" : {
+        "name" : "James Halliday",
+        "email" : "mail@substack.net",
+        "url" : "http://substack.net"
+    }
+}

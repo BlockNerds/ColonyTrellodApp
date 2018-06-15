@@ -1,0 +1,71 @@
+{
+  "lanes": [
+    {
+      "id": "PLANNED",
+      "title": "Chores",
+      "label": "20/70",
+      "style": {"width": 280},
+      "cards": [
+        {
+          "id": "Milk",
+          "title": "Take out trash",
+          "label": "15 CLNY",
+          "cardStyle": { "width": 270, "maxWidth": 270, "margin": "auto", "marginBottom": 5 },
+          "description": ""
+        },
+        {
+          "id": "Plan2",
+          "title": "Clean your room",
+          "label": "10 CLNY",
+          "cardStyle": { "width": 270, "maxWidth": 270, "margin": "auto", "marginBottom": 5 },
+          "description": ""
+        },
+        {
+          "id": "Plan3",
+          "title": "Read Harry Potter - 1 CH",
+          "label": "30 CLNY",
+          "cardStyle": { "width": 270, "maxWidth": 270, "margin": "auto", "marginBottom": 5 },
+          "description": ""
+        },
+        {
+          "id": "Plan4",
+          "title": "Feed your puppy",
+          "label": "5 CLNY",
+          "cardStyle": { "width": 270, "maxWidth": 270, "margin": "auto", "marginBottom": 5 },
+          "description": "2 scoops of pup food"
+        }
+      ]
+    },
+    {
+      "id": "WIP",
+      "title": "In Progress",
+      "label": "10/20",
+      "style": {"width": 280},
+      "cards": [
+        {
+          "id": "Wip1",
+          "title": "Crypto Zombies: Lesson 1",
+          "label": "30 CLNY",
+          "cardStyle": { "width": 270, "maxWidth": 270, "margin": "auto", "marginBottom": 5 },
+          "description": "Complete coding lessons."
+        }
+      ]
+    },
+    {
+      "id": "COMPLETED",
+      "title": "Done",
+      "style": {"width": 280},
+      "label": "2/5",
+      "cards": [
+      ]
+    },
+    {
+      "id": "REPEAT",
+      "title": "Mom Approved",
+      "style": {"width": 280},
+      "label": "1/1",
+      "cards": [
+      ]
+    }
+  ]
+}

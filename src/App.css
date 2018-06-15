@@ -1,0 +1,29 @@
+.App {
+}
+
+.App-header {
+  background-color: #fff;
+  height: 50px;
+  padding: 10px;
+  color: #333;
+
+}
+
+.App-intro {
+  font-size: small;
+  margin: 0;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+#uPortal{
+  height:75px;
+  width: 250px;
+  margin-left: 650px;
+  margin-top: -62px;
+text-align:right;
+vertical-align: top;
+}

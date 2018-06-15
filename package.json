@@ -1,0 +1,34 @@
+{
+  "name": "trello-colonyjs",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@colony/colony-js-adapter-ethers": "^1.2.0",
+    "@colony/colony-js-client": "^1.2.0",
+    "@colony/colony-js-contract-loader-http": "^1.2.0",
+    "buffer": "^5.1.0",
+    "ethers": "^3.0.17",
+    "ipfs": "^0.29.2",
+    "qrcode-terminal": "^0.12.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-images": "^0.5.17",
+    "react-trello": "1.30.0",
+    "uport-connect": "^0.7.3"
+  },
+  "devDependencies": {
+    "ganache-cli": "^6.1.0",
+    "jest": "^23.1.0",
+    "react-scripts": "^0.9.5",
+    "trufflepig": "^1.0.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "deploy-contracts": "cd src/lib/colonyNetwork && ./node_modules/.bin/truffle migrate --compile-all --reset",
+    "start-ganache": "cd src/lib/colonyNetwork && ganache-cli -d --gasLimit 7000000 --acctKeys ganache-accounts.json",
+    "start-trufflepig": "cd src/lib/colonyNetwork && trufflepig --ganacheKeyFile ganache-accounts.json"
+  }
+}
