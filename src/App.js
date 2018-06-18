@@ -5,7 +5,7 @@ import {Board} from 'react-trello'
 //inject the magically colonyJS
 const createColony = require('./create_colony');
 const createTask = require('./create_task');
-//const createRating = require('./create_rating');
+const createRating = require('./create_rating');
 
 const data = require('./data.json')
 
@@ -29,7 +29,7 @@ const handleDragEnd = (cardId, sourceLaneId, targetLaneId) => {
     console.log(`sourceLaneId: ${sourceLaneId}`)
     console.log(`targetLaneId: ${targetLaneId}`)
 
-    //todo check user role parent to set create rating
+    //check user role parent to set create rating
     if(targetLaneId == "REPEAT"){
       console.log("submit rating to approve for payment")
       //do parent approved = rating 5 to approve allowance for this task
@@ -37,12 +37,14 @@ const handleDragEnd = (cardId, sourceLaneId, targetLaneId) => {
       if(uName.includes('Kirk')){
         //is parent
         console.log('is parent -- trigger create rating to approve allowance payment')
+        createColony()
+          .then(createRating)
+          // We're exiting hard here as the providers keep polling otherwise
+          .then(() => process.exit())
+          .catch(err => console.error(err));
       }
-      // createColony()
-      //   .then(createRating)
-      //   // We're exiting hard here as the providers keep polling otherwise
-      //   .then(() => process.exit())
-      //   .catch(err => console.error(err));
+
+
     }
 }
 
